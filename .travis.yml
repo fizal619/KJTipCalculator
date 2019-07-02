@@ -1,4 +1,14 @@
-dist: trusty
+env:
+  global:
+    - SWIFT_SNAPSHOT=swift-4.2-RELEASE
+    - SONARCLOUD_ELIGIBLE=true
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10
+      sudo: required
+
 addons:
   sonarcloud:
     organization: "fizal619-github" # the key of the org you chose at step #3
