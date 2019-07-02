@@ -1,0 +1,8 @@
+addons:
+  sonarcloud:
+    organization: "fizal619-github" # the key of the org you chose at step #3
+    token:
+      secure: "Rc0NjHPXn3bbqaDLp73PJPWiOF8+3GUCuykRETg3AUoKnOrikYnYyExlf39ogNq4Uw01tQb0hKzvodOgwF6GmU/R86sb01iWUVm/wd79uwk0TWAkZdksOLRRXR77juJqFQ6KURBwb6fBzrX5zVyiJevypmNlvcuWyn/vFRd1pCgzerIWhcLkymdjGSu/gS0rQDIBr7L8D6RUEygU9+j3a9dI/gszEdZUa/7+lQ74ROyPVvoIlFkKs2z0zz7jjcb9oHceEeMKDoTaU7kWJANjTjcvRTPYzKwnm0IscZX+fWRew1ctMq/sn7rkI0CJDbdAK6qJH2mEnFOQGXx+K/vUd3AsYglT7ZfjtfrBXs4YDtEhaXXfg1vlCbf6N19TD5RdyX5pIxMKlbQWrnjz3dP8X2coxuV74nChO37T0n6e4Sq15f5cc8zOsc9uyW+22oXTdSSmhx/mYFgj+QJPwgcHBWiAJkOo4fMAKFTwVWtgnsp79eZuv9t2XZGeksg3wNBJvt06ueZbz2iYF64H/ssE7RYplF3M+GuYXMkSRUAiwhN8rD/OSjD66r5TAwfVIC9LUv58qcYtmpc1EfFlGXxZnuSJyrI3LZhwodyNNDxmAqwVaFX2qZ9VagE+9MmddsorETTxb6Ae/qxdTOwWea88EM9T9HedJkEenPLEYZJSum8="
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
